@@ -11,3 +11,5 @@ npm run dev
 ```
 
 ## Dependencies
+
+- [gray-matter](https://github.com/jonschlinkert/gray-matter) for parsing markdown files.

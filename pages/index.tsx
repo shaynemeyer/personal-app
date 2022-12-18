@@ -1,11 +1,17 @@
-import type { NextPage } from "next";
+import type { GetStaticProps, NextPage } from "next";
 import Link from "next/link";
 
 import { BlogList } from "../components/blogs";
 import { BaseLayout } from "../components/layouts";
 import { PortfolioList } from "../components/portfolios";
+import { Blog } from "../interfaces/Blog";
+import { getBlogs } from "../lib/blogs";
 
-const Home: NextPage = () => {
+type HomeProps = {
+  blogs: Blog[];
+};
+
+const Home: NextPage<HomeProps> = ({ blogs }) => {
   return (
     <BaseLayout>
       <h2 className="text-2xl font-bold tracking-tight text-gray-900">
@@ -15,7 +21,7 @@ const Home: NextPage = () => {
         </Link>
       </h2>
 
-      <BlogList />
+      <BlogList blogs={blogs} />
 
       <br></br>
 
@@ -29,6 +35,14 @@ const Home: NextPage = () => {
       <PortfolioList />
     </BaseLayout>
   );
+};
+
+export const getStaticProps: GetStaticProps = () => {
+  const blogs = getBlogs();
+
+  return {
+    props: { blogs },
+  };
 };
 
 export default Home;
