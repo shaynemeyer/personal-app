@@ -17,3 +17,4 @@ npm run dev
 - [remark-html](https://github.com/remarkjs/remark-html#readme) - remark plugin that compiles markdown to HTML.
 - [remark-gfm](https://github.com/remarkjs/remark-gfm#readme)
 - [@tailwindcss/typography](https://tailwindcss.com/docs/typography-plugin)
+- [@heroicons/react](https://github.com/tailwindlabs/heroicons#readme)
