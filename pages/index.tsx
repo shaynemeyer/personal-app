@@ -1,11 +1,11 @@
 import type { GetStaticProps, NextPage } from "next";
 import Link from "next/link";
 
-import { BlogList } from "../components/blogs";
-import { BaseLayout } from "../components/layouts";
-import { PortfolioList } from "../components/portfolios";
-import { Blog } from "../interfaces/Blog";
-import { getBlogs } from "../lib/blogs";
+import { BlogList } from "@components/blogs";
+import { BaseLayout } from "@components/layouts";
+import { PortfolioList } from "@components/portfolios";
+import { Blog } from "@interfaces/Blog";
+import { getBlogs } from "@lib/blogs";
 
 type HomeProps = {
   blogs: Blog[];
