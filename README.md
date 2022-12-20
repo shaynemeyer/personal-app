@@ -18,3 +18,4 @@ npm run dev
 - [remark-gfm](https://github.com/remarkjs/remark-gfm#readme)
 - [@tailwindcss/typography](https://tailwindcss.com/docs/typography-plugin)
 - [@heroicons/react](https://github.com/tailwindlabs/heroicons#readme)
+- [js-search](https://github.com/bvaughn/js-search) - For searching JSON & JavaScript Objects.
